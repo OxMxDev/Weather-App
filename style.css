@@ -1,131 +1,213 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Noto Sans", sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Noto Sans", sans-serif;
 }
-html , body{
-    height: 100%;
-    background:url(WeatherBackground.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-}
-
-nav{
-    color: white;
-    display: flex;
-    width: 100%;
-    height: 80px;
-    background-color:rgba(80, 70, 81, 0.8);
-    align-items: center;
-    padding: 0 10px;
-    justify-content: space-between;
+html,
+body {
+	height: 100%;
+	background: url(WeatherBackground.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 100%;
 }
 
-nav h1{
-    font-size: 41px;
+nav {
+	color: white;
+	display: flex;
+	width: 100%;
+	height: 80px;
+	background-color: rgba(80, 70, 81, 0.8);
+	align-items: center;
+	padding: 0 10px;
+	justify-content: space-between;
 }
 
-ul{
-    padding-right: 50px;
-    font-size: 24px;
-    font-weight: 400;
-    gap: 60px;
-    list-style-type: none;
-    display: flex;
+nav h1 {
+	font-size: 41px;
 }
 
-li{
-    cursor: pointer;
+ul {
+	padding-right: 50px;
+	font-size: 24px;
+	font-weight: 400;
+	gap: 60px;
+	list-style-type: none;
+	display: flex;
 }
 
-.inputContainer{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    width: 100%;
-    gap: 20px;
+li {
+	cursor: pointer;
 }
 
-.inputContainer input[type = "text"]{
-    color: white;
-    font-size: 25px;
-    background: rgba(255, 255, 255, 0.6);
-    padding-left: 40px;
-    width: 400px;
-    height: 50px;
-    border-radius: 30px;
+.inputContainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	width: 100%;
+	gap: 20px;
 }
 
-.inputContainer input[type = "text"]::placeholder{
-    color: white;
+.inputContainer input[type="text"] {
+	color: white;
+	font-size: 25px;
+	background: rgba(255, 255, 255, 0.6);
+	padding-left: 40px;
+	width: 400px;
+	height: 50px;
+	border-radius: 30px;
 }
 
-.inputContainer i{
-    font-size: 30px;
-    color: white;
-    margin-top: 10px;
-    cursor: pointer;
+.inputContainer input[type="text"]::placeholder {
+	color: white;
 }
 
-.cityNameContainer{
-    padding: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-    align-items: center;
-    width: 100%;
-    height: 30%;
+.inputContainer i {
+	font-size: 30px;
+	color: white;
+	margin-top: 10px;
+	cursor: pointer;
 }
 
-.cityName{
-    width: 20%;
-    height: 100%;
+.cityNameContainer {
+	padding: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	color: white;
+	align-items: center;
+	width: 100%;
+	height: 30%;
 }
 
-.cityName h2{
-    font-size: 21px;
-    font-weight: 600;
+.cityName {
+	width: 20%;
+	height: 100%;
 }
 
-.cityName h1{
-    font-size: 64px;
-    font-weight: 900;
+.cityName h2 {
+	font-size: 21px;
+	font-weight: 600;
 }
 
-.climateInfo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 100px;
-    margin-top: 20px;
-    height: 175px;
-    width: 175px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
+.cityName h1 {
+	font-size: 64px;
+	font-weight: 900;
+}
+
+.climateInfo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 100px;
+	margin-top: 20px;
+	height: 175px;
+	width: 175px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 .weatherInfo {
-    gap: 20px;
-    justify-content: center;
-    display: grid;
-    width: 100%;
-    grid-template-rows: repeat(2,150px);
-    grid-template-columns: repeat(3,230px);
+	gap: 20px;
+	justify-content: center;
+	display: grid;
+	width: 100%;
+	grid-template-rows: repeat(2, 150px);
+	grid-template-columns: repeat(3, 230px);
 }
 
-.item{
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 700;
+.item {
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	font-weight: 700;
 }
 
+@media only screen and (max-width: 600px) {
 
+    nav h1 {
+	font-size: 21px;
+}
+ul {
+	padding-right: 10px;
+	font-size: 11px;
+	font-weight: 400;
+	gap: 10px;
+	list-style-type: none;
+	display: flex;
+}
+.inputContainer input[type="text"] {
+	color: white;
+	font-size: 20px;
+	background: rgba(255, 255, 255, 0.6);
+	padding-left: 40px;
+	width: 250px;
+	height: 40px;
+	border-radius: 30px;
+}
+.inputContainer i {
+	font-size: 20px;
+	color: white;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.cityNameContainer {
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	align-items: center;
+	width: 100%;
+	height: 30%;
+}
+
+.cityName h2 {
+    margin-top: 30px;
+	font-size: 11px;
+	font-weight: 600;
+}
+.cityName h1 {
+	font-size: 24px;
+	font-weight: 900;
+}
+.climateInfo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	/* margin-top: 20px; */
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.weatherInfo {
+    margin-top: 100px;
+	gap: 10px;
+	justify-content: center;
+	display: grid;
+	width: 100%;
+	grid-template-rows: repeat(2, 100px);
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: white;
+	display: flex;
+	align-items: center;
+    text-align: center;
+	justify-content: center;
+	font-size: 19px;
+	font-weight: 700;
+}
+
+}
